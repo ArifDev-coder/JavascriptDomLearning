@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Latihan 1 Dom</title>
+    <style>
+        html, body {
+            height: 100%; /* membuat body full */
+        }
+        body {
+            text-align: center;
+            font-family: poppins;
+            border-radius: 12rem;
+            background-color: rgb(127.5, 127.5, 127.5);
+        }
+        button {
+            width: 23rem;
+            height: 4rem;
+            border-radius: 35rem;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        button:hover {
+            opacity: 60%;
+            cursor: pointer;
+        }
+        section {
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        .dark {
+            background-color: black;
+            color: white;
+        }
+        .cube {
+            width: 5rem;
+            height: 5rem;
+            margin: 10px auto;
+            color: white;
+            font-weight: bolder;
+            border-radius: 12px;
+            border: 1px solid;
+        }
+        .merah {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hijau {
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .biru {
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="">
+    <h1>Bermain Dengan Warna</h1>
+    <section>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, facere exercitationem quibusdam eum quod impedit incidunt illum excepturi, eveniet ipsum fugit deleniti quidem itaque tempora labore placeat nesciunt laboriosam asperiores.</p>
+        <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste corporis, cumque nihil quo corrupti voluptatem explicabo accusantium tempore cum odit animi dolorum quidem aut voluptatum consectetur id nobis similique reiciendis.</span><span>Dolores cupiditate nobis quam ab laborum recusandae, necessitatibus adipisci ad autem sit, deserunt numquam ex at sequi similique doloribus dolor dolorem ipsum ipsa blanditiis animi repudiandae temporibus. Accusamus, animi nihil?</span><span>Minima et nostrum ipsam esse! Deserunt dolor ipsum consequuntur, in impedit magnam perferendis hic repellendus, vitae, cupiditate sequi beatae. Veniam rerum non asperiores iste ex amet minus repellendus, ipsum quod.</span></p>
+    </section>
+    <button id="ubahwarna" type="button">Ubah Tema</button>
+    <br>
+    <div class="cube merah">
+        <p class="text-color-red">127.5</p>
+    </div>
+    <input type="range" name="sRed" min="0" max="255" class="input-range">
+    <div class="cube hijau">
+        <p class="text-color-green">127.5</p>
+    </div>
+    <input type="range" name="sGreen" min="0" max="255" class="input-range">
+    <div class="cube biru">
+        <p class="text-color-blue">127.5</p>
+    </div>
+    <input type="range" name="sBlue" min="0" max="255" class="input-range">
+
+
+    <script src="main.js"></script>
+</body>
+</html>
