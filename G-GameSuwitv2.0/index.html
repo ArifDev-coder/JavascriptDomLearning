@@ -7,33 +7,128 @@
     <style>
         * {
             font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            background-color: black;
+            background-image: url(img/bg.png);
         }
 
         /* container */
 
         .container {
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
+        
         /* Judul */
-
+        
         .judul {
             font-size: 2.7rem;
             font-weight: bolder;
-            background: white;
+            color: black;
+            margin-bottom: 4rem;
+            text-shadow: 4px 6px 3px grey;
+            
         }
 
         /* Game Content */
+        
+        .game-content {
+            background-color: lightblue;
+            width: 45rem;
+            height: 45rem;
+            border-radius: 6rem;
+            box-shadow: 12px 12px 43px grey;
+            border: dashed;
+            align-content: center;
+        }
+
+        /* barier */
+
+        .container .game-content .barier {
+            background-color: white;
+            width: 130px;
+            height: 47px;
+            position: absolute;
+            left: calc(50% - 65px);
+            transform: translateY(50%);
+            border-radius: 24px;
+            border:2px solid;
+            bottom: 28.7rem;
+            text-align: center;
+            align-content: center;
+            font-size: 1.5rem;
+        }
+
+        /* finger container */
+
+        .finger-container {
+            display: flex;
+            justify-content: center;
+            padding: 39px;
+            gap: 10px;
+        }
+        .finger-container1 {
+            border-bottom: 2px solid;
+            padding: 39px;
+            gap: 10px;
+        }
+
+        #finger {
+            cursor: pointer;
+        }
+        #finger:hover {
+            box-shadow: 0px 12px darkcyan;
+        }
+
+        /* image */
+        img {
+            width: 12rem;
+        }
+
+        /* media queries */
+        @media (max-width: 1366px) {
+            .container .game-content .barier {
+            }
+        }
+        @media (max-width: 679px) {
+            .container .game-content .barier {
+                bottom: 27.4rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="judul">SUWIT JAWA V2.0</div>
     <div class="container">
-        <div class="judul">SUWIT JAWA V2.0</div>
-    </div>
     <header class="game-content">
-        
+        <div class="finger-container1 area-komputer">
+            <img class="comp" src="img/gajah.png" alt="finger">
+        </div>
+        <div class="barier info">
+            
+        </div>
+        <div class="finger-container area-player">
+            <div class="pilihan">
+                <img class="gajah" id="finger" src="img/gajah.png" alt="gajah" title="Gajah">
+            </div>
+            <div class="pilihan">
+                <img class="orang" id="finger" src="img/orang.png" alt="orang" title="Orang">
+            </div>
+            <div class="pilihan">
+                <img class="semut" id="finger" src="img/semut.png" alt="semut" title="Semut">
+            </div>
+        </div>
     </header>
+    </div>
+    <footer class="footer">
+        Copyright by Achmad Zainul Arif 2024
+    </footer>
 
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 </html>
