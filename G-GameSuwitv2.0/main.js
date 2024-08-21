@@ -31,6 +31,10 @@ function putar() {
     ), 100
 }
 
+function tambahPoint() {
+    
+}
+
 const pilihan = document.querySelectorAll('.pilihan img')
 pilihan.forEach(function(pil) {
     pil.addEventListener('click', function() {
