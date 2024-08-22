@@ -19,6 +19,7 @@ body {
     margin: 20px;
     position: relative;
     text-align: center;
+    transition: 3s ease-out;
 }
 .card img {
     float: left;
