@@ -51,10 +51,14 @@ body {
     font-weight: bold;
     color: #999;
     position: absolute;
-    top: 8px;
+    top: 20px;
     right: 30px;
     cursor: pointer;
 }
 .card:hover .close{
     color: red;
+}
+.active {
+    margin-left: -100%;
+    transition: 1s ease-in-out;
 }
