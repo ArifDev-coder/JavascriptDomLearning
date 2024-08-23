@@ -9,10 +9,14 @@ thumbs.forEach(function(img) {
             jumbo.classList.remove('fade')
         }, 500);
         
-        thumbs.className = 'thumb'
-        
+        thumbs.forEach(function(thumb) {
+            // if(thumb.classList.contains('active')) thumb.classList.remove('active');
+            thumb.className = 'thumb';
+        });
+
         e.target.classList.add('active');
-            e.preventDefault();
-            // console.log(src);
-        })
-})
+
+        e.preventDefault();
+        // console.log(src);
+    });
+});
